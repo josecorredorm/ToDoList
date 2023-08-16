@@ -74,7 +74,7 @@
                  <h5 class="card-title">${task.tks}</h5>
                  <h6 class="card-subtitle mb-2 text-body-secondary">${task.id}</h6>
                  <p class="card-text">Relevancia de la tarea</p>
-                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onchange="checkstatus(${i})">
+                 <input class="form-check-input" type="checkbox" value="" id="checkbox${i}" onchange="checkstatus(${i},checkbox${i})">
                  <label class="form-check-label" for="flexCheckDefault">
                    Tarea realizada
                  </label>
@@ -92,6 +92,16 @@
     tasks.splice(ID,1);
     Act();
   }
-  function checkstatus(index){
-    tasks[index].stat = "True";   
-  }
+  function checkstatus(index,id){
+    let ttaskdo = document.getElementById("TtaskDo");
+    let checkbox = document.getElementById(id.id);
+    console.log(checkbox.checked);
+    if(checkbox.checked == 1){
+        tasks[index].stat = "True";  
+        }
+    else if(checkbox.checked == 0){
+        tasks[index].stat = "False";
+        } 
+    let taskfilter = tasks.filter(ele => ele.stat == "True");
+    ttaskdo.innerHTML = taskfilter.length;   
+    }
