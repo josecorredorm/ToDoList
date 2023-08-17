@@ -7,34 +7,34 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.8/index.min.js">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.8/index.min.js"></script> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>To do List</title>
 </head>
 <body>
      <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
+        <div class="container">
           <a class="navbar-brand" href="#">
             <img src="./assets/css/img/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
             To Do List !!
           </a>
         </div>
       </nav>
-      <div class="d-flex flex-row mb-3">
-        <div class="p-2">
+      <div class="container mb-3">
             <P>Ingrese la nueva tarea</P>
-            <input id="ImputTask" class="form-control" type="text" placeholder="Por hacer.." aria-label="default input example">
-            <!-- <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
-            <span></span> -->
+            <input id="ImputTask" class="form-control" type="text" placeholder="Por hacer.." aria-label="default input example"> 
+            <label for="colorSelector">Seleccione la importancia:</label>
+            <select id="colorSelector" class="color-select">
+            <option class="green" value="green">Poco importante</option>
+            <option class="yellow" value="yellow">Importante</option>
+            <option class="orange" value="orange">Urgente</option>
+            </select> <br>
             <button type="button" class="btn btn-primary m-2" id="BtnAdd">Agregar</button>
             <p>Total de tareas: <span id="Ttask">0</span></p>
             <p>Total de tareas realizadas: <span id="TtaskDo">0</span></p>
-        </div>
-        <div class="p-2 w-10">
-            <ul id="ToDo"> 
-            </ul>
-        </div>
-        <div class="p-2 w-10">
-            <!-- <div id="calendar"></div> -->
-        </div>
+            <h6> TAREAS ASIGANADAS</h6>
+            <div class="w-10 gap-3 d-flex flex-wrap" id="ToDo">
+
+            </div>
       </div>
  
     </section>

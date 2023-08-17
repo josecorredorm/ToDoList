@@ -1,0 +1,22 @@
+#ImputTask{
+    width: 30%;
+}
+ #colorSelector {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+  }
+  
+  .green {
+    background-color: #ADFF2F; /* Verde */
+  }
+  
+  .yellow {
+    background-color: #FFFF00; /* Amarillo */
+  }
+  
+  .orange {
+    background-color: #FFA500; /* Naranja */
+  }
