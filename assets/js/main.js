@@ -76,7 +76,6 @@
                 <div class="card-body">
                   <h5 class="card-title">${task.tks}</h5>
                   <h6 class="card-subtitle mb-2 text-body-secondary">ID: ${task.id}</h6>
-                  <p class="card-text">Relevancia de la tarea</p>
                   <input class="form-check-input" type="checkbox" value="" id="checkbox${i}" onchange="checkstatus(${i},checkbox${i})" >
                   <label class="form-check-label" for="flexCheckDefault">
                     Tarea realizada
